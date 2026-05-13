@@ -1,6 +1,8 @@
 ---
 name: growth-content-strategy
-description: "Combined AI growth and marketing toolkit — Dharmesh Shah + Kieran Flanagan. PRIMARY USE: This is THE skill for AEO (Answer Engine Optimization) questions. Trigger whenever user asks about AEO, ranking in AI engines, LLM visibility, share of voice, SEO → AEO migration. Also trigger on: Dharmesh Shah, Kieran Flanagan, Marketing Against The Grain, agent.ai, simple.ai, AI growth strategy, content creation, GTM strategy, LinkedIn personal brand, prompting frameworks, AI adoption, context engineering, AI agents, marketing automation, customer intelligence, competitive intel, video ads, presentations, course design, deep research, or 'how would Dharmesh/Kieran think about this'. Routes to relevant reference module(s) based on task."
+description: Dharmesh Shah + Kieran Flanagan toolkit. Routes to reference modules by topic: AEO, AI adoption, GTM, content, agents, prompting. Triggers: AEO, AI growth, Dharmesh, Kieran, content strategy.
+license: MIT
+metadata: {"openclaw": {"emoji": "📈"}}
 ---
 
 # Growth Content Strategy
@@ -13,14 +15,14 @@ Practical frameworks, mental models, prompts, and playbooks distilled from:
 ## LinkedIn Post Workflow Integration
 
 For LinkedIn post creation: loaded in Step 2 (Strategic Framing) of `linkedin-post-workflow`.
-- `references/kieran/content-creation.md` — hooks, structure, content systems
-- `references/dharmesh/content-creation.md` — human moat framing, authenticity, "share what you think"
+- `{baseDir}/references/kieran/content-creation.md` — hooks, structure, content systems
+- `{baseDir}/references/dharmesh/content-creation.md` — human moat framing, authenticity, "share what you think"
 
 Load both files in Step 2 for maximum framing coverage.
 
 ## How This Skill Works
 
-This is a **router skill**. Based on the user's task, load the relevant reference module(s) from `references/dharmesh/` or `references/kieran/` and apply the frameworks within.
+This is a **router skill**. Based on the user's task, load the relevant reference module(s) from `{baseDir}/references/dharmesh/` or `{baseDir}/references/kieran/` and apply the frameworks within.
 
 **Only load what you need.** Most tasks require 1-2 modules.
 
@@ -28,21 +30,21 @@ This is a **router skill**. Based on the user's task, load the relevant referenc
 
 | Module | Source | File | Use When |
 |--------|--------|------|----------|
-| **AI Adoption Mastery** | Dharmesh | `references/dharmesh/ai-adoption-mastery.md` | AI adoption strategy, 60/30/10 framework, daily AI habits, developing AI intuition, keeping up with AI, blank slate mindset |
-| **Context Engineering** | Dharmesh | `references/dharmesh/context-engineering.md` | Context windows, prompt → context engineering evolution, Context Quotient (CQ), context graphs, AI memory problem, RAG, custom instructions, context-first platforms |
-| **AEO & AI Search** | Dharmesh | `references/dharmesh/aeo-ai-search.md` | AI distribution strategy, binary outcomes, deserve-to-rank philosophy, why the distribution shift matters |
-| **Agents & Future of Work** | Dharmesh | `references/dharmesh/agents-future-of-work.md` | AI agent strategy, IQ×EQ×CQ formula, agent managers, LLM evolution, tools→teammates shift, $1B one-person company, career positioning with agents |
-| **Content Creation Strategy** | Dharmesh | `references/dharmesh/content-creation.md` | Content in the AI era, human experience moat, LinkedIn personal brand, authenticity vs AI slop, "share what you think" |
-| **Prompting Techniques** | Dharmesh | `references/dharmesh/prompting-techniques.md` | Meta prompting, metaprompt.com, model selection, ImageGen for business visuals, prompt optimization |
-| **AEO & AI Search** | Kieran | `references/kieran/aeo-ai-search.md` | Answer Engine Optimization, LLM visibility, share of voice, citations, page structure for AI crawlers, SEO → AEO migration |
-| **GTM Strategy** | Kieran | `references/kieran/gtm-strategy.md` | Go-to-market planning, marketing roles for AI era, intent engines, micro-audience campaigns, marketing dashboards/metrics |
-| **Content Creation** | Kieran | `references/kieran/content-creation.md` | Content systems, writing craft, creative teams via AI, YouTube→social repurposing, hooks, talking points |
-| **Customer Intelligence** | Kieran | `references/kieran/customer-intelligence.md` | Digital twin customers, purchase intent simulation (SSR), persona research from real language, customer vocabulary |
-| **Competitive Intel** | Kieran | `references/kieran/competitive-intel.md` | Competitor research, growth forensics, hiring audits, paid ads audits, partnership discovery |
-| **AI Productivity** | Kieran | `references/kieran/ai-productivity.md` | Prompting techniques, daily AI playbook, AI coaching, prompt libraries, memory/context management |
-| **Presentations** | Kieran | `references/kieran/presentations.md` | Marketing presentations using expert frameworks (Dunford, Raskin, Duarte), master prompt system, GenSpark workflows |
-| **Video & Ads** | Kieran | `references/kieran/video-ads.md` | Video ad creation (VEO3 storyboard process), YouTube script outlines, B2B ad templates |
-| **Courses & Research** | Kieran | `references/kieran/courses-research.md` | Course creation for any topic, deep research prompt anatomy (McKinsey-style) |
+| **AI Adoption Mastery** | Dharmesh | `{baseDir}/references/dharmesh/ai-adoption-mastery.md` | AI adoption strategy, 60/30/10 framework, daily AI habits, developing AI intuition, keeping up with AI, blank slate mindset |
+| **Context Engineering** | Dharmesh | `{baseDir}/references/dharmesh/context-engineering.md` | Context windows, prompt → context engineering evolution, Context Quotient (CQ), context graphs, AI memory problem, RAG, custom instructions, context-first platforms |
+| **AEO & AI Search** | Dharmesh | `{baseDir}/references/dharmesh/aeo-ai-search.md` | AI distribution strategy, binary outcomes, deserve-to-rank philosophy, why the distribution shift matters |
+| **Agents & Future of Work** | Dharmesh | `{baseDir}/references/dharmesh/agents-future-of-work.md` | AI agent strategy, IQ×EQ×CQ formula, agent managers, LLM evolution, tools→teammates shift, $1B one-person company, career positioning with agents |
+| **Content Creation Strategy** | Dharmesh | `{baseDir}/references/dharmesh/content-creation.md` | Content in the AI era, human experience moat, LinkedIn personal brand, authenticity vs AI slop, "share what you think" |
+| **Prompting Techniques** | Dharmesh | `{baseDir}/references/dharmesh/prompting-techniques.md` | Meta prompting, metaprompt.com, model selection, ImageGen for business visuals, prompt optimization |
+| **AEO & AI Search** | Kieran | `{baseDir}/references/kieran/aeo-ai-search.md` | Answer Engine Optimization, LLM visibility, share of voice, citations, page structure for AI crawlers, SEO → AEO migration |
+| **GTM Strategy** | Kieran | `{baseDir}/references/kieran/gtm-strategy.md` | Go-to-market planning, marketing roles for AI era, intent engines, micro-audience campaigns, marketing dashboards/metrics |
+| **Content Creation** | Kieran | `{baseDir}/references/kieran/content-creation.md` | Content systems, writing craft, creative teams via AI, YouTube→social repurposing, hooks, talking points |
+| **Customer Intelligence** | Kieran | `{baseDir}/references/kieran/customer-intelligence.md` | Digital twin customers, purchase intent simulation (SSR), persona research from real language, customer vocabulary |
+| **Competitive Intel** | Kieran | `{baseDir}/references/kieran/competitive-intel.md` | Competitor research, growth forensics, hiring audits, paid ads audits, partnership discovery |
+| **AI Productivity** | Kieran | `{baseDir}/references/kieran/ai-productivity.md` | Prompting techniques, daily AI playbook, AI coaching, prompt libraries, memory/context management |
+| **Presentations** | Kieran | `{baseDir}/references/kieran/presentations.md` | Marketing presentations using expert frameworks (Dunford, Raskin, Duarte), master prompt system, GenSpark workflows |
+| **Video & Ads** | Kieran | `{baseDir}/references/kieran/video-ads.md` | Video ad creation (VEO3 storyboard process), YouTube script outlines, B2B ad templates |
+| **Courses & Research** | Kieran | `{baseDir}/references/kieran/courses-research.md` | Course creation for any topic, deep research prompt anatomy (McKinsey-style) |
 
 ## Routing Logic
 
@@ -51,7 +53,7 @@ This is a **router skill**. Based on the user's task, load the relevant referenc
 3. Load those modules with `read`
 4. Apply frameworks to the user's specific context
 
-> **AEO Routing Note:** For AEO tactical questions (stats, execution playbooks, page structure, share-of-voice measurement) → use `references/kieran/aeo-ai-search.md`. For AI distribution strategy or philosophy (binary outcomes, deserve-to-rank thinking, why the distribution shift matters) → load `references/dharmesh/aeo-ai-search.md` instead or in addition.
+> **AEO Routing Note:** For AEO tactical questions (stats, execution playbooks, page structure, share-of-voice measurement) → use `{baseDir}/references/kieran/aeo-ai-search.md`. For AI distribution strategy or philosophy (binary outcomes, deserve-to-rank thinking, why the distribution shift matters) → load `{baseDir}/references/dharmesh/aeo-ai-search.md` instead or in addition.
 
 ### Common Routing Examples
 

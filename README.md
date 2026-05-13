@@ -6,11 +6,11 @@ Reusable [OpenClaw](https://github.com/openclaw/openclaw) agent skill modules �
 
 | Skill | Purpose | Lines |
 |---|---|---|
-| **refactor-for-determinism** | Audit and improve OpenClaw skills for structure, clarity, determinism, and trigger quality | ~170 |
-| **audience-intelligence-builder** | Build research-backed audience profiles — content mode (pain points, triggers, language) or marketing mode (buyer persona, JTBD, buying journey) | ~80 |
-| **competitive-positioning-analyzer** | Systematic competitive analysis: positioning, messaging, pricing, features, white space identification | ~90 |
-| **growth-content-strategy** | AI growth & marketing toolkit — Dharmesh Shah + Kieran Flanagan frameworks, mental models, and playbooks routed by task | ~140 |
-| **memory-capture** | Parse, classify, and route brain dumps to the right workspace files automatically | ~50 |
+| **audience-intelligence-builder** | Build research-backed audience profiles. Two modes: --content (content audience) and --marketing (buyer persona). Triggers: audience profile, buyer persona, ICP, target audience, who am I writing for, who is my customer. | ~80 |
+| **competitive-positioning-analyzer** | Analyze competitors' positioning, messaging, pricing, and marketing to find white space and advantages. Triggers: competitive analysis, competitor research, market positioning, battlecard, white space analysis. | ~90 |
+| **growth-content-strategy** | Dharmesh Shah + Kieran Flanagan toolkit. Routes to reference modules by topic: AEO, AI adoption, GTM, content, agents, prompting. Triggers: AEO, AI growth, Dharmesh, Kieran, content strategy. | ~110 |
+| **memory-capture** | Automatically parse, classify, and route brain dumps to the right workspace files. Use when the user says "remember this", "save this", "add to memory", "save all", "make sure to save", "things to remember", or drops a list of principles, names, insights, book references, ideas, or actionable items to capture. Also triggers when the user shares something at the end of a conversation that should be preserved across sessions. Routes each item to the correct file automatically — no manual decisions needed. | ~30 |
+| **refactor-for-determinism** | >- | ~270 |
 
 ## Usage
 

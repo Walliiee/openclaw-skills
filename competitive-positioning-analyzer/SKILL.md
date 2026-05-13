@@ -1,6 +1,8 @@
 ---
 name: competitive-positioning-analyzer
-description: "Systematically analyze competitors' positioning, messaging, pricing, product features, and marketing tactics to identify white space opportunities, competitive advantages, and strategic threats. Use when the user needs competitive intelligence, market positioning analysis, or wants to understand their competitive landscape. Triggers: competitive analysis, competitor research, market positioning, analyze competitors, competitive landscape, positioning strategy, white space analysis, competitive intelligence, battlecard."
+description: Analyze competitors' positioning, messaging, pricing, and marketing to find white space and advantages. Triggers: competitive analysis, competitor research, market positioning, battlecard, white space analysis.
+license: MIT
+metadata: {"openclaw": {"emoji": "⚔️"}}
 ---
 
 # Competitive Positioning Analyzer
@@ -16,6 +18,8 @@ The user needs to provide only **one input**: their company name or website URL.
 **Examples:** "Acme Corp", "https://www.acmecorp.com", "Slack"
 
 The skill automatically researches the company and identifies competitors.
+
+> **Always run in the main workspace session.** This skill needs access to web search and file writes.
 
 ## Workflow
 
@@ -52,13 +56,13 @@ For each competitor, research:
 - Strengths, weaknesses, customer perception
 - Recent activity (launches, funding, partnerships)
 
-3-5 searches/fetches per competitor. See `references/research-best-practices.md` for research strategy details.
+3-5 searches/fetches per competitor. See `{baseDir}/references/research-best-practices.md` for research strategy details.
 
 ### Step 4: Synthesize Analysis
 
-After researching all 5 companies, synthesize into a structured report using the format in `references/output-format.md`.
+After researching all 5 companies, synthesize into a structured report using the format in `{baseDir}/references/output-format.md`.
 
-**Read `references/output-format.md`** for the complete report template. The report covers:
+**Read `{baseDir}/references/output-format.md`** for the complete report template. The report covers:
 - Executive summary
 - Your company profile
 - Competitive landscape overview
@@ -77,7 +81,7 @@ After researching all 5 companies, synthesize into a structured report using the
 - Actionable insights (not just data collection)
 - Strategic depth (go beyond surface comparison)
 
-See `references/research-best-practices.md` for detailed research strategy, source quality guidelines, and analysis depth expectations.
+See `{baseDir}/references/research-best-practices.md` for detailed research strategy, source quality guidelines, and analysis depth expectations.
 
 ## Response Tone
 
@@ -85,5 +89,5 @@ Analytical, objective, insight-driven, action-oriented. Professional but direct.
 
 ## Downstream Skills
 
-- `audience-intelligence-builder` — feeds customer context for positioning
-- `linkedin-post-workflow` — competitive insights inform content angles
+- `{baseDir}/../audience-intelligence-builder` — feeds customer context for positioning
+- `{baseDir}/../linkedin-post-workflow` — competitive insights inform content angles

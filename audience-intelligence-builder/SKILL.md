@@ -1,6 +1,8 @@
 ---
 name: audience-intelligence-builder
-description: "Build a research-backed audience intelligence profile. Two modes: --content (content creation audience — pain points, content triggers, language, trusted sources) and --marketing (buyer persona — demographics, psychographics, JTBD, buying journey, channel preferences). Use when the user needs to understand who they're creating content for or marketing to. Triggers: audience profile, content persona, buyer persona, ideal customer profile, ICP, reader profile, target audience, audience research, who am I writing for, who is my customer."
+description: Build research-backed audience profiles. Two modes: --content (content audience) and --marketing (buyer persona). Triggers: audience profile, buyer persona, ICP, target audience, who am I writing for, who is my customer.
+license: MIT
+metadata: {"openclaw": {"emoji": "👥"}}
 ---
 
 # Audience Intelligence Builder
@@ -13,6 +15,8 @@ Builds a research-backed profile of a target audience. Two modes:
 - **`--marketing`** — Comprehensive buyer persona. Demographics, psychographics, jobs-to-be-done, buying journey, channel preferences. Built for marketing strategy and positioning.
 
 Both modes use external research. Both produce structured markdown files.
+
+> **Always run in the main workspace session.** This skill needs access to web search and file writes.
 
 ## Mode Selection
 
@@ -43,7 +47,7 @@ Use `web_search` with "latest" in queries. Conduct 4-7 searches covering:
 
 ### Step 3: Build the Profile
 
-Synthesize into the output format for the selected mode. **Read `references/output-formats.md`** for the complete template structures.
+Synthesize into the output format for the selected mode. **Read `{baseDir}/references/output-formats.md`** for the complete template structures.
 
 Every major claim should reference a source inline.
 
@@ -62,17 +66,17 @@ Every major claim should reference a source inline.
 
 ## Delivery
 
-**Content mode:** Save to `skills/linkedin-post-workflow/references/audience-profiles/<audience-name>.md`. Brief summary of which sections had strongest research, flag thin areas.
+**Content mode:** Save to `{baseDir}/../linkedin-post-workflow/references/audience-profiles/<audience-name>.md`. Brief summary of which sections had strongest research, flag thin areas.
 
-**Marketing mode:** Save to `research/personas/<audience-name>.md`. Brief summary of strongest-evidenced sections, gaps to validate.
+**Marketing mode:** Save to `{baseDir}/../../research/personas/<audience-name>.md`. Brief summary of strongest-evidenced sections, gaps to validate.
 
 ## Downstream Skills
 
 **Content mode** feeds into:
-- `talking-point-extractor` — uses audience profile to filter relevance
-- `lookalike-content` — needs audience profile as input
-- `linkedin-post-workflow` — uses audience for targeting
+- `{baseDir}/../talking-point-extractor` — uses audience profile to filter relevance
+- `{baseDir}/../lookalike-content` — needs audience profile as input
+- `{baseDir}/../linkedin-post-workflow` — uses audience for targeting
 
 **Marketing mode** feeds into:
-- `competitive-positioning-analyzer` — customer context for positioning
-- `linkedin-post-workflow` — targeting context
+- `{baseDir}/../competitive-positioning-analyzer` — customer context for positioning
+- `{baseDir}/../linkedin-post-workflow` — targeting context
